@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<!-- ウェブページの文字エンコーディングを指定するために使用されます。 -->
+		<meta charset="UTF-8" />
+		<!-- ウェブページのビューポート（表示領域）の設定を指定します。 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- ウェブページのタイトルに使用されます。 -->
+		<title>うつわ屋こはる</title>
+		<!-- ウェブページの簡潔な説明や概要を提供するために使用されます。 -->
+		<meta
+			name="description"
+			content="うつわ屋こはるは陶器専門のECサイトです。陶器の製造・販売を行っています。"
+		/>
+		<!-- モバイルブラウザが電話番号の検出やリンク化を行わないように設定しています。 -->
+		<meta name="format-detection" content="telephone=no" />
+		<!-- ファビコンを設定しています。 -->
+		<link rel="shortcut icon" href="image/favicon.ico" />
+		<!-- reset.cssは、destyleを使用しています。 -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"
+		/>
+		<!-- スタイルシート（css）を呼び出しています -->
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body class="body">
+  <!-- ここから記述します。 -->
+		<!-- ヘッダー -->
+		<header class="header u-wrapper">
+			<h1>
+				<a href="index.html">
+					<img class="header_logo" src="image/logo-white.png" alt="ロゴ"/>
+				</a>
+			</h1>
+			<div>
+				<nav class="header_menu">
+					<a href="index.html">
+						<img class="header_menulogo" src="image/logo.png" alt="メニューロゴ"/>
+					</a>
+					<ul>
+						<li class="header_menulist"><a class="header_menulink" href="index.html">ホーム</a></li>
+						<li class="header_menulist"><a class="header_menulink" href="products.html">商品一覧</a></li>
+						<li class="header_menulist"><a class="header_menulink" href="company.html">会社概要</a></li>
+						<li class="header_menulist"><a class="header_menulink" href="about.html">私たちについて</a></li>
+					</ul>
+				</nav>
+				<div class="header_btn">
+					<span class="header_hamburgerline"></span>
+					<span class="header_hamburgerline"></span>
+					<span class="header_hamburgerline"></span>
+				</div>
+				<div class="header_btnmsk"></div>
+			</div>
+		</header>
+		<main>
+			<div class="item_wrapper u-wrapper">
+			  <div>
+				<img src="image/item1.jpg" alt="益子焼オリジナルセット" />
+			  </div>
+			  <div>
+				<h1 class="item_title">益子焼オリジナルセット</h1>
+				<p class="item_price">価格：9,800円 (税込み)</p>
+				<p class="item_label"><label for="">数量</label></p>
+				<p><input class="item_number" type="number" value="1" min="1"/></p>
+				<p class="item_link"><a href="#">お買い物かごに入れる<i class="fa-solid fa-cart-shopping" style="color: #ffffff"></i></a></p>
+				<p class="item_text item__text--marginBottom">このマグカップは、地元で採れる質の高い粘土を使用し、一つ一つ手作業で丁寧に作られています。シンプルながらも洗練されたフォルムは、持ちやすさと使いやすさを追求しました。</p>
+				<p class="item_text">手に馴染む持ち手部分は、長時間の使用でも疲れにくく、毎日のコーヒータイムやティータイムにおすすめです。</p>
+			  </div>
+			</div>
+		  </main>
+		<footer class="footer_wrapper">
+			<div class="footer_inner u-wrapper">
+				<div>
+					<a href="index.html">
+						<img class="footer_logo" src="image/logo.png" alt="ロゴ"/>
+					</a>
+					<ul class="footer_menu">
+						<li><a href="index.html">ホーム</a></li>
+						<li><a href="products.html">商品一覧</a></li>
+						<li><a href="company.html">会社概要</a></li>
+						<li><a href="about.html">私たちについて</a></li>
+					</ul>
+				</div>
+				<p class="footer_copyright">©︎うつわ屋こはる All Right Reserved</p>
+			</div>
+		</footer>
+
+   <!-- JSを呼び出しています -->
+		<script src="js/menu.js"></script>
+	</body>
+</html>
