@@ -1,13 +1,137 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <title>カリキュラム</title>
-</head>
-<body>
-  <h1>GitHub Pages カリキュラム</h1>
-  <p>VS Codeを使って公開する練習です。</p>
-  <h2>ステップ1: GitHubでリポジトリを作成</h2>
-  <p>まずはGitHubで新しいリポジトリを作ります。</p>
-</body>
+	<head>
+		<!-- ウェブページの文字エンコーディングを指定するために使用されます。 -->
+		<meta charset="UTF-8" />
+		<!-- ウェブページのビューポート（表示領域）の設定を指定します。 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- ウェブページのタイトルに使用されます。 -->
+		<title>うつわ屋こはる</title>
+		<!-- ウェブページの簡潔な説明や概要を提供するために使用されます。 -->
+		<meta
+			name="description"
+			content="うつわ屋こはるは陶器専門のECサイトです。陶器の製造・販売を行っています。"
+		/>
+		<!-- モバイルブラウザが電話番号の検出やリンク化を行わないように設定しています。 -->
+		<meta name="format-detection" content="telephone=no" />
+		<!-- ファビコンを設定しています。 -->
+		<link rel="shortcut icon" href="image/favicon.ico" />
+		<!-- reset.cssは、destyleを使用しています。 -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"
+		/>
+		<!-- スタイルシート（css）を呼び出しています -->
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body class="body">
+		<!-- ヘッダー -->
+		<header class="header u-wrapper">
+			<h1>
+				<a href="index.html">
+					<img class="header_logo" src="image/logo-white.png" alt="ロゴ"/>
+				</a>
+			</h1>
+			<div>
+				<nav class="header_menu">
+					<a href="index.html">
+						<img class="header_menulogo" src="image/logo.png" alt="メニューロゴ"/>
+					</a>
+					<ul>
+						<li class="header_menulist"><a class="header_menulink" href="index.html">ホーム</a></li>
+						<li class="header_menulist"><a class="header_menulink" href="products.html">商品一覧</a></li>
+						<li class="header_menulist"><a class="header_menulink" href="company.html">会社概要</a></li>
+						<li class="header_menulist"><a class="header_menulink" href="about.html">私たちについて</a></li>
+					</ul>
+				</nav>
+				<div class="header_btn">
+					<span class="header_hamburgerline"></span>
+					<span class="header_hamburgerline"></span>
+					<span class="header_hamburgerline"></span>
+				</div>
+				<div class="header_btnmsk"></div>
+			</div>
+		</header>
+
+		<!--メイン-->
+		<main class="main">
+			<section class="u-wrapper">
+				<div class="grid">
+					<div class="grid_item">
+						<a href="item1.html">
+							<img class="grid_img" src="image/item1.jpg" alt="益子焼オリジナルセット"/>
+							<p class="grid_text">益子焼オリジナルセット</p>
+							<p class="grid_text">¥9,800</p>
+						</a>
+					</div>
+					<div class="grid_item">
+						<a href="item2.html">
+							<img class="grid_img" src="image/item2.jpg" alt="湯呑み茶碗"/>
+							<p class="grid_text">湯呑み茶碗</p>
+							<p class="grid_text">¥4,400</p>
+						</a>
+					</div>
+					<div class="grid_item">
+						<a href="item3.html">
+							<img class="grid_img" src="image/item3.jpg" alt="抹茶茶碗"/>
+							<p class="grid_text">抹茶茶碗</p>
+							<p class="grid_text">¥3,200</p>
+						</a>
+					</div>
+					<div class="grid_item">
+						<a href="item4.html">
+							<img class="grid_img" src="image/item4.jpg" alt="レトロのボウル"/>
+							<p class="grid_text">レトロのボウル</p>
+							<p class="grid_text">¥2,500</p>
+						</a>
+					</div>
+					<div class="grid_item">
+						<a href="item5.html">
+							<img class="grid_img" src="image/item5.jpg" alt="益子焼マグカップ"/>
+							<p class="grid_text">益子焼マグカップ</p>
+							<p class="grid_text">¥3,500</p>
+						</a>
+					</div>
+					<div class="grid_item">
+						<a href="item6.html">
+							<img class="grid_img" src="image/item6.jpg" alt="オリジナルカップ"/>
+							<p class="grid_text">オリジナルカップ</p>
+							<p class="grid_text">¥5,200</p>
+						</a>
+					</div>
+					<div class="grid_item">
+						<a href="item7.html">
+							<img class="grid_img" src="image/item7.jpg" alt="ビンテージカップ"/>
+							<p class="grid_text">ビンテージカップ</p>
+							<p class="grid_text">¥3,500</p>
+						</a>
+					</div>
+				</div>
+				<div class="grid_btn">
+					<a class="grid_btntext" href="products.html">もっとみる</a>
+				</div>
+				<p class="grid_lefttext">UTSUWAYA KOHARU</p>
+			</section>
+		</main>
+		
+		<!--フッター-->
+		<footer class="footer_wrapper">
+			<div class="footer_inner u-wrapper">
+				<div>
+					<a href="index.html">
+						<img class="footer_logo" src="image/logo.png" alt="ロゴ"/>
+					</a>
+					<ul class="footer_menu">
+						<li><a href="index.html">ホーム</a></li>
+						<li><a href="products.html">商品一覧</a></li>
+						<li><a href="company.html">会社概要</a></li>
+						<li><a href="about.html">私たちについて</a></li>
+					</ul>
+				</div>
+				<p class="footer_copyright">©︎うつわ屋こはる All Right Reserved</p>
+			</div>
+		</footer>
+		<!-- JS -->
+		<script src="js/menu.js" defer></script>
+	</body>
 </html>
